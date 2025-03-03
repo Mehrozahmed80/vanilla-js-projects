@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 23, 23);
+
+    
+}
+.cal{
+    height: 575px;
+    width: 361px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding-bottom: 20px;
+}
+.input{
+border: none;
+outline: none;
+padding-top: 100px;
+width: 273px;
+font-size: 50px;
+color: white;
+background-color: black;
+text-align: right;
+}
+
+.button{
+    width: 70px;
+    height: 70px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(42, 42, 44);
+}
+.button0{
+    width: 150px;
+    height: 70px;
+    margin: 5px 5px 5px 0px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: rgb(42, 42, 44);
+    color: white;
+    font-size: 20px;
+
+}
+.buttonl{
+    width: 70px;
+    height: 70px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    background-color: rgb(255, 159, 10);
+}
+.buttont{
+    width: 70px;
+    height: 70px;
+    margin: 5px 5px 5px 0px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color:rgba(92, 92, 95);
+}
+button:active{
+    background-color:rgb(92, 92, 95) ;
+}
+.buttonl:active{
+    background-color: rgb(243, 160, 63);
+
+}
+.buttont:active{
+    background-color: rgb(165, 165, 165);
+}
