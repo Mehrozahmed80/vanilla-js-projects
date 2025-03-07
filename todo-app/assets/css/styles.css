@@ -1,0 +1,147 @@
+*{
+    margin: 0;  
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.page{
+    width: 100%;
+    min-height:100vh ;  
+    background: linear-gradient(135deg,#153677,#4e085f);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+.bi-list-task{
+    margin-left: 10px;
+}
+.feild{
+    display: flex;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    
+    border-radius: 30px;
+    /* padding-left: 20px; */
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+   padding: 16px 20px;
+   border-radius:40px ;
+    /* padding: 10px; */
+    background: #edeef0;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #153677;
+    margin-left: -38px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 5px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url("/images/Untitled\ design\ \(12\).png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+#list-container{
+    padding-left: 0;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("/images/Untitled\ design\ \(11\).png");
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
+.btn{
+    color: red;
+    position: absolute;
+    right: 40px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    background-image: url("/images/pngwing.com.png");
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    color: #555;
+   
+    /* text-align: center; */
+    border-radius: 50%;
+
+}
+.btn:hover{
+    background-color: #edeef0;
+}
+@media (max-width:404px) {
+    .feild{
+        flex-direction: column;
+    }
+    input{
+width: 100%;
+    }
+    button{
+        width: 100%;
+        margin-left: 0;
+    }
+}
