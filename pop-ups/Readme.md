@@ -18,7 +18,7 @@ Open index.html in your browser
 
 File Structure
 
-📁 project-folder
+📁 pop-ups
 │-- 📄 index.html
 │-- 📁 assets
 │   │-- 📁 css
